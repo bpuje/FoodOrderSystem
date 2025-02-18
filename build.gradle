@@ -1,0 +1,44 @@
+plugins {
+    id 'application'
+}
+
+group 'com.css'
+version '1.0'
+
+apply plugin: "java"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://picocli.info/
+    implementation 'info.picocli:picocli:4.7.0'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.4.2'
+    // https://github.com/simple-http/simple-http
+    implementation 'com.simple-http:simple-http:1.4'
+//    implementation 'org.slf4j:slf4j-jdk14:2.0.3'
+    //implementation 'org.slf4j:slf4j-api:2.0.7' // Use the latest version
+    // implementation 'org.slf4j:slf4j-simple:2.0.7' // Use the latest version
+    //implementation 'org.slf4j:slf4j-simple:2.0.12'
+
+    implementation 'org.slf4j:slf4j-api:2.0.9'
+    implementation 'org.slf4j:slf4j-simple:2.0.9' // Simple SLF4J logger
+
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.5.1'
+}
+
+ext {
+    javaMainClass = "com.css.challenge.FoodOrderSystem"
+}
+
+application {
+    mainClass = 'com.css.challenge.FoodOrderSystem'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.css.challenge.FoodOrderSystem'
+    }
+}
