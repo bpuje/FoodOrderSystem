@@ -21,8 +21,11 @@ The Food Order Fulfillment System is designed to process and manage food orders 
 1. Clone the repository:
 
 ``
-git clone https://github.com/your-repo/FoodOrderFulfillment.git
-cd FoodOrderFulfillment
+git clone https://github.com/bpuje/FoodOrderSystem.git
+``
+
+``
+cd FoodOrderSystem
 ``
 
 2. Build the project:

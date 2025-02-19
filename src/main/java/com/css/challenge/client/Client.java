@@ -1,18 +1,22 @@
 package com.css.challenge.client;
 
-import static simplehttp.HeaderList.headers;
-import static simplehttp.HeaderPair.header;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import simplehttp.HttpClient;
+import simplehttp.HttpClients;
+import simplehttp.HttpResponse;
+import simplehttp.UnencodedStringMessage;
+
 import java.io.IOException;
 import java.net.URL;
 import java.time.Duration;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import simplehttp.*;
+
+import static simplehttp.HeaderList.headers;
+import static simplehttp.HeaderPair.header;
 
 /** Client is a client for fetching and solving challenge test problems. */
 public class Client {
@@ -80,8 +84,9 @@ public class Client {
    * solveProblem submits a sequence of actions and parameters as a solution to a test problem.
    * Returns test result.
    */
-  public String solveProblem(String testId, Duration rate, Duration min, Duration max, List<Action> actions) throws IOException {
-
+  public String solveProblem(
+      String testId, Duration rate, Duration min, Duration max, List<Action> actions)
+      throws IOException {
     Solution solution = new Solution(new Options(rate, min, max), actions);
 
     URL url = new URL(endpoint + "/interview/challenge/solve?auth=" + auth);

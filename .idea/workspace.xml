@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a351cdae-15e7-44b3-9ba4-2da1ba2c34bf" name="Changes" comment="" />
+    <list default="true" id="a351cdae-15e7-44b3-9ba4-2da1ba2c34bf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/css/challenge/FoodOrderSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/css/challenge/FoodOrderSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/css/challenge/client/Storage.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/css/challenge/client/Storage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/css/challenge/client/StorageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/css/challenge/client/StorageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/FoodOrderSystem.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/css/challenge/FoodOrderSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/css/challenge/FoodOrderSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/css/challenge/client/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/css/challenge/client/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/css/challenge/client/StorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/css/challenge/client/StorageTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +42,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;bpuje&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/bpuje/FoodOrderSystem.git&quot;,
+    &quot;accountId&quot;: &quot;37f2ca3e-9e59-4556-ae2e-5222ce75c86d&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -39,6 +73,10 @@
     &quot;Gradle.gradle [:com.css.challenge.Main.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.gradle [dependencies].executor&quot;: &quot;Run&quot;,
     &quot;JUnit.StorageTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StorageTest.testMoveOrders.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StorageTest.testPlaceOrderInCooler.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StorageTest.testPlaceOrderInShelf.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StorageTest.testShelfDiscardLeastFresh.executor&quot;: &quot;Run&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
@@ -46,6 +84,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/puje/Documents/Data/JS/cloudkitchens/m1d/java/gradle&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -64,11 +103,11 @@
       <recent name="com.css.challenge.client" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FoodOrderSystem">
+  <component name="RunManager" selected="JUnit.StorageTest.testMoveOrders">
     <configuration name="FoodOrderSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.css.challenge.FoodOrderSystem" />
       <module name="challenge.main" />
-      <option name="PROGRAM_PARAMETERS" value="--auth=d5cy8f5u537z " />
+      <option name="PROGRAM_PARAMETERS" value="--auth=d5cy8f5u537z" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.css.challenge.*" />
@@ -78,28 +117,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="gradle [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
     </configuration>
     <configuration name="StorageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="challenge.main" />
@@ -112,6 +129,54 @@
       <option name="PACKAGE_NAME" value="com.css.challenge.client" />
       <option name="MAIN_CLASS_NAME" value="com.css.challenge.client.StorageTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StorageTest.testMoveOrders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="challenge.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.css.challenge.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.css.challenge.client" />
+      <option name="MAIN_CLASS_NAME" value="com.css.challenge.client.StorageTest" />
+      <option name="METHOD_NAME" value="testMoveOrders" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StorageTest.testPlaceOrderInShelf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="challenge.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.css.challenge.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.css.challenge.client" />
+      <option name="MAIN_CLASS_NAME" value="com.css.challenge.client.StorageTest" />
+      <option name="METHOD_NAME" value="testPlaceOrderInShelf" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StorageTest.testShelfDiscardLeastFresh" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="challenge.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.css.challenge.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.css.challenge.client" />
+      <option name="MAIN_CLASS_NAME" value="com.css.challenge.client.StorageTest" />
+      <option name="METHOD_NAME" value="testShelfDiscardLeastFresh" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,14 +196,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.FoodOrderSystem" />
-      <item itemvalue="Gradle.gradle [dependencies]" />
+      <item itemvalue="JUnit.StorageTest.testMoveOrders" />
+      <item itemvalue="JUnit.StorageTest.testPlaceOrderInShelf" />
+      <item itemvalue="JUnit.StorageTest.testShelfDiscardLeastFresh" />
       <item itemvalue="JUnit.StorageTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StorageTest.testMoveOrders" />
         <item itemvalue="JUnit.StorageTest" />
-        <item itemvalue="Gradle.gradle [dependencies]" />
+        <item itemvalue="JUnit.StorageTest.testShelfDiscardLeastFresh" />
         <item itemvalue="Application.FoodOrderSystem" />
+        <item itemvalue="JUnit.StorageTest.testPlaceOrderInShelf" />
       </list>
     </recent_temporary>
   </component>
@@ -161,12 +230,24 @@
       <workItem from="1739404644646" duration="12039000" />
       <workItem from="1739463848050" duration="7574000" />
       <workItem from="1739561594656" duration="33256000" />
-      <workItem from="1739913914028" duration="325000" />
+      <workItem from="1739913914028" duration="15838000" />
+      <workItem from="1739983177429" duration="8899000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -182,14 +263,9 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/css/challenge/client/Storage.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/css/challenge/client/Storage.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/css/challenge/client/StorageTest.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

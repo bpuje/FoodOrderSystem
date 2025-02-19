@@ -18,13 +18,7 @@ dependencies {
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.4.2'
     // https://github.com/simple-http/simple-http
     implementation 'com.simple-http:simple-http:1.4'
-//    implementation 'org.slf4j:slf4j-jdk14:2.0.3'
-    //implementation 'org.slf4j:slf4j-api:2.0.7' // Use the latest version
-    // implementation 'org.slf4j:slf4j-simple:2.0.7' // Use the latest version
-    //implementation 'org.slf4j:slf4j-simple:2.0.12'
-
-    implementation 'org.slf4j:slf4j-api:2.0.9'
-    implementation 'org.slf4j:slf4j-simple:2.0.9' // Simple SLF4J logger
+    implementation 'org.slf4j:slf4j-jdk14:2.0.3'
 
     implementation 'org.junit.jupiter:junit-jupiter-api:5.5.1'
 }
