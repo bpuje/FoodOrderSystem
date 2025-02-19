@@ -1,8 +1,15 @@
 # Food Order Fulfillment System
 
-## Overview
 
-The Food Order Fulfillment System is designed to process and manage food orders efficiently using a shelf-based storage mechanism. It integrates with the CloudKitchens API to retrieve and process orders while ensuring orders are stored in appropriate storage sections (cooler, heater, or shelf) and discarded if necessary based on freshness criteria.
+This project implements a real-time system for fulfilling food orders in a delivery-only kitchen. The system allows orders to be received, stored, and picked up concurrently. It ensures that orders are stored at their ideal temperature and discarded if they exceed their freshness duration.
+
+1. [Requirements](#prerequisites)
+
+2. [Build and Run](#build-and-run)
+
+3. [Order Discard Criteria](#order-discard-criteria)
+
+4. [Dependencies](#dependencies)
 
 # How to Build and Run the Program
 
@@ -14,9 +21,7 @@ The Food Order Fulfillment System is designed to process and manage food orders 
 * Gradle (for dependency management)
 
 
-* Internet access (to connect to the API)
-
-## Build Instructions:
+## Build and Run:
 
 1. Clone the repository:
 
@@ -28,21 +33,35 @@ git clone https://github.com/bpuje/FoodOrderSystem.git
 cd FoodOrderSystem
 ``
 
-2. Build the project:
+2. Build the Project:
+
+Use Gradle to build the project:
 
 ``
 $ ./gradlew build
 ``
+This will compile the code, run tests, and create an executable JAR file in the build/libs directory.
 
-## Running the Program:
+## Running the Harness Program:
 
 To execute the program, run the following command:
 
-``
-java -jar build/libs/FoodOrderFulfillment.jar --auth <YOUR_AUTH_TOKEN> --endpoint <API_ENDPOINT>
-``
+```
+$ ./gradlew run --args="--auth=<YOUR_AUTH_TOKEN>"
+```
+
+Replace YOUR_AUTH_TOKEN with the authentication token
+
 
 Optional parameters:
+
+* ``
+--endpoint:`` Problem server endpoint https://api.cloudkitchens.com.
+
+
+* ``
+--auth:`` Authentication token (required).
+
 
 * ``
 --name:`` Specify a problem name (optional).
@@ -66,29 +85,47 @@ Optional parameters:
 Example usage:
 
 ``
-java -jar build/libs/FoodOrderFulfillment.jar --auth d5cy8f5u537z --rate 500 --min 4 --max 8
+$ ./gradle run --args="--auth d5cy8f5u537z --rate 1000 --min 5 --max 10"
 ``
 
-## Order Discard Strategy
+## Order Discard Criteria
 
-When the shelf reaches its maximum capacity, we must discard an order to make space for new ones. The current strategy selects the order with the lowest freshness for removal. This decision is based on the assumption that fresher orders have a higher likelihood of being picked up before expiration.
+#### When the shelf is full and a new order needs to be placed, the system must discard an existing order to make room. The criteria for selecting which order to discard are as follows:
+
+1. Oldest Order on the Shelf:
+    * The system discards the oldest order on the shelf. This is based on the principle of First-In-First-Out (FIFO), ensuring that orders that have been on the shelf the longest are discarded first.
+    * This approach is simple and ensures fairness, as no order is unfairly prioritized for discard.
+
+2. Priority for Ideal Storage:
+    * Before discarding an order, the system attempts to move an existing order from the shelf to its ideal storage (cooler or heater) if space becomes available. This helps maintain the freshness of orders for as long as possible.
+
+3. Freshness Consideration:
+    * Orders that have exceeded their freshness duration are automatically discarded during periodic freshness checks, regardless of whether the shelf is full.
+
+
 
 ## Why This Strategy?
 
-1. Maximizes Order Fulfillment: Keeping fresher orders in storage increases the chance that they will be successfully delivered before expiry.
+1. Simplicity: Discarding the oldest order is straightforward to implement and understand.
 
 
-2. Reduces Waste: Removing the least fresh order ensures that remaining orders have a better chance of completion.
+2. Fairness: No order is unfairly targeted for discard, as the oldest order is always removed first.
 
 
-3. Improves System Efficiency: By continuously discarding only the least fresh orders, the system maintains optimal storage utilization.
+3. Efficiency: Moving orders to their ideal storage before discarding helps maintain the quality of as many orders as possible.
 
-## Future Improvements
+### Dependencies
+This project uses the following dependencies:
 
-* Dynamic Shelf Management: Adjust storage capacity based on order volume.
-
-
-* Predictive Order Placement: Use machine learning to optimize shelf space usage.
+* Gradle: Build and dependency management tool.
 
 
-* Order Prioritization: Introduce ranking based on temperature sensitivity and expected pickup time.
+* Jackson: For JSON parsing and serialization.
+
+
+* SLF4J: For logging.
+
+
+* JUnit 5: For unit testing.
+
+The dependencies are managed by Gradle and can be found in the build.gradle file.
